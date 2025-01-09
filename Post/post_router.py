@@ -48,7 +48,7 @@ async def upload_posting(
         f.write(await file.read())
     
     # URL 생성
-    path = f"http://localhost:8000/static/{unique_filename}"
+    path = f"https://port-0-market-m5h20ajhfe0ec0f1.sel4.cloudtype.app/static/{unique_filename}"
 
     # 데이터베이스에 저장
     db_post = PostModel(
